@@ -1,0 +1,119 @@
+/* Wrapper to give full width and padding */
+.banner-wrapper {
+    width: 100%;
+   
+    background-color: #ffffff;
+    padding: 80px 20px;
+  }
+  
+  /* Main banner container */
+  .banner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #fdeaff, #f0f4f7);
+    align-items: center;
+    padding: 60px 40px;
+    border-radius: 20px;
+    
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    flex-wrap: wrap;
+  }
+  
+  /* Content section */
+  .banner-content {
+    flex: 1 1 500px;
+    padding-right: 30px;
+  }
+  
+  .banner-content h1 {
+    font-size: 3.5rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .banner-content h1 span {
+    display: block;
+    color: #000;
+  }
+  
+  .banner-content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* CTA Button */
+  .check-btn {
+    background-color: #ff3c3c;
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 60, 60, 0.3);
+  }
+  
+  .check-btn:hover {
+    background-color: #e63232;
+    box-shadow: 0 8px 20px rgba(255, 60, 60, 0.5);
+  }
+  
+  /* Image section */
+  .banner-image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner-image img {
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .banner {
+      padding: 40px 30px;
+    }
+  
+    .banner-content h1 {
+      font-size: 2.8rem;
+    }
+  
+    .check-btn {
+      padding: 12px 28px;
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .banner-content {
+      padding: 0;
+    }
+  
+    .banner-content h1 {
+      font-size: 2.4rem;
+    }
+  
+    .banner-image img {
+      width: 280px;
+      margin-bottom: 30px;
+    }
+  }
+  
